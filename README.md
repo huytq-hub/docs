@@ -11,6 +11,8 @@ Local dev: npm run workers:dev (không cần build)
 
 
 Build TypeScript code: npm run workers:build
+
 Rebuild Docker image: docker compose -f infra/docker-compose.yml build workers
+
 Restart container: docker compose -f infra/docker-compose.yml up -d workers
 
