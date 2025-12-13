@@ -5,4 +5,5 @@ npx prisma db push --force-reset && npm run seed
 npm run seed
 
 Docker: npm run stack:up:build
+
 Local dev: npm run workers:dev (không cần build)
