@@ -16,4 +16,6 @@ Rebuild Docker image: docker compose -f infra/docker-compose.yml build workers
 
 Restart container: docker compose -f infra/docker-compose.yml up -d workers
 
+rebuild và restart: docker compose -f infra/docker-compose.yml up --build -d workers
+
 docker logs -f ondo-workers
