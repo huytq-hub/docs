@@ -19,3 +19,13 @@ Restart container: docker compose -f infra/docker-compose.yml up -d workers
 rebuild và restart: docker compose -f infra/docker-compose.yml up --build -d workers
 
 docker logs -f ondo-workers
+
+
+# Từ thư mục infra
+docker compose -f docker-compose.yml build workers
+
+# Hoặc từ root project
+docker compose -f infra/docker-compose.yml build workers
+
+# Hoặc rebuild và restart
+docker compose -f infra/docker-compose.yml up --build -d workers
